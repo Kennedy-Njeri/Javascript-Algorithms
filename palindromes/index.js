@@ -10,6 +10,17 @@ const palindrome = (str) => {
 console.log(palindrome('abba'))
 
 
+// using every
+// const array1 = [1, 30, 39, 29, 10, 13, 50];
+//
+// const solution = array1.every((char) => {
+//     return char < 40
+// })
+//
+// console.log(solution)
+
+
+
 module.exports = palindrome;
 
 
