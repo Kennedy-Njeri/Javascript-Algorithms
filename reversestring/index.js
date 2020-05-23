@@ -1,6 +1,7 @@
 
 
 const reverse = (str) => {
+  debugger
   return str.split('').reduce((reversed, character) => {
     return character + reversed
   }, '')
@@ -15,6 +16,10 @@ const reverse = (str) => {
 console.log(reverse('kennedy'))
 
 
+// debugger run node inspect index.js
+// insert c for continue
+// then insert repl for read edit
+// insert variable
 
 module.exports = reverse
 
