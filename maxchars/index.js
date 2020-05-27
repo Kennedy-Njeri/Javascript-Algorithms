@@ -15,6 +15,8 @@
 
 const maxChars = (names) => {
     const word = {}
+    let max = 0
+    let maxChar = ''
 
     for (let name of names) {
         if (!word[name]) {
@@ -24,9 +26,16 @@ const maxChars = (names) => {
         }
     }
 
-    return word
+    for (let name in word){
+        if (word[name] > max) {
+            max = word[name]
+            maxChar = name
+        }
+    }
+
+    return maxChar
 }
 
 
 
-console.log(maxChars('Kennedy'))
+console.log(maxChars('Kenndy'))
