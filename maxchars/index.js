@@ -39,3 +39,6 @@ const maxChars = (names) => {
 
 
 console.log(maxChars('Kenndy'))
+
+
+module.exports = maxChars;
