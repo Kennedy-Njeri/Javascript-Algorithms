@@ -1,19 +1,26 @@
 
 
-const reverse = (str) => {
-  debugger
-  return str.split('').reduce((reversed, character) => {
-    return character + reversed
-  }, '')
+
+const reverse = (sentence) => {
+  return sentence.split(/\b/).reverse().join('')
 }
 
 
 
+// const reverse = (str) => {
+//   debugger
+//   return str.split('').reduce((reversed, character) => {
+//     return character + reversed
+//   }, '')
+// }
 
 
 
 
-console.log(reverse('kennedy'))
+
+
+
+console.log(reverse('My name is Kennedy'))
 
 
 // debugger run node inspect index.js
