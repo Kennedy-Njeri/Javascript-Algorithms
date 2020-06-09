@@ -2,7 +2,7 @@
 
 
 const reverse = (sentence) => {
-  return sentence.split(/\b/).reverse().join('')
+  return sentence.split(" ").reverse().join(' ')
 }
 
 

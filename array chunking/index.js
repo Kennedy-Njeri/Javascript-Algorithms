@@ -9,8 +9,9 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 // finding last element in an array
-//var array = [1,2,3,4,5,6];
-//var val = array[array.length - 1]; ans=6
+// var array = [1,2,3,4,5,6];
+// var val = array[array.length - 1]; //ans=6
+// console.log(val)
 
 
 
@@ -19,6 +20,7 @@ const chunk = (array, size) => {
 
     for (let element of array) {
         const last = chunked[chunked.length -1]
+        console.log(last)
 
         if (!last || last.length === size) {
             chunked.push([element])
