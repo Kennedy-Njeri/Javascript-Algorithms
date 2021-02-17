@@ -19,4 +19,4 @@ let findWord = (words) => {
 
 
 
-findWord(largeArray)
+findWord(largeArray) // O(n) linear time
