@@ -33,7 +33,7 @@ const maxChars = (names) => {
         }
     }
 
-    return { maxChar, max }
+    return { maxChar, max, word }
 }
 
 
