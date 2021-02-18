@@ -6,9 +6,11 @@ const largeArray = new Array(1000).fill('kennedy')
 
 let findWord = (words) => {
     let t0 = performance.now()
+    console.log("hello")
     for (let i = 0; i < words.length; i++) {
       if (words[i] === 'kennedy') {
           console.log("Found Word!!")
+          break
       }
     }
 
