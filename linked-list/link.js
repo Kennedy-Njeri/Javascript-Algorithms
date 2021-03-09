@@ -1,5 +1,5 @@
 
-
+// https://visualgo.net/en/list
 class Node {
     constructor(value) {
         this.value = value
@@ -69,6 +69,13 @@ class LinkedList {
         }
         return currentNode
     }
+    remove(index) {
+        const leader = this.traverseToIndex(index-1)
+        const unwantedNode = leader.next
+        leader.next = unwantedNode.next
+        this.length--
+        return this.printList()
+    }
 }
 
 
@@ -78,6 +85,6 @@ myLinkedList.append(5)
 myLinkedList.append(16)
 myLinkedList.prepend(3)
 myLinkedList.insert(2, 55)
-
+myLinkedList.remove(3)
 
 console.log(myLinkedList.printList())
