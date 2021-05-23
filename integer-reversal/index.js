@@ -11,14 +11,10 @@
 const reverseInt = (n) => {
     const reverse = n.toString().split('').reverse().join('')
 
-    if (n < 0) {
-        return parseInt(reverse) * -1
-    }
-
-    return parseInt(reverse)
+    return reverse
 }
 
-console.log(reverseInt(-51))
+console.log(reverseInt(100))
 
 
 
