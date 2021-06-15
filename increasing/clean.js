@@ -40,6 +40,8 @@ function main(input) {
 }
 
 
+
+
 /*
 know whether the
 array is increasing or not
