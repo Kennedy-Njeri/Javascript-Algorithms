@@ -14,7 +14,7 @@ const reverseInt = (n) => {
     return reverse
 }
 
-console.log(reverseInt(100))
+console.log(reverseInt(-100))
 
 
 
