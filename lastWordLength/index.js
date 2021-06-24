@@ -8,7 +8,7 @@ const lengthOfLastWord = (x) => {
     if (!sArr.includes(" ")) return newInput.length;
 
     for (let i = newInput.length - 1; i > 0; i--) {
-        if (newInput[i] != " ") {
+        if (newInput[i] !== " ") {
             counter++;
         } else {
             return counter;

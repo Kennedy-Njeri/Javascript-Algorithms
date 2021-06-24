@@ -35,3 +35,12 @@ module.exports = palindrome;
 //
 //
 // }
+
+
+var isPalindrome = function(s) {
+    let isPal = s.toLowerCase().replace(/[^a-zA-Z0-9]/g,"").split('').reverse().join('')
+    //console.log(s.toLowerCase().replace(/[^a-zA-Z0-9]/g,""))
+    //console.log(isPal)
+
+    return isPal === s.toLowerCase().replace(/[^a-zA-Z0-9]/g,"")
+};
